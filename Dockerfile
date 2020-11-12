@@ -8,5 +8,6 @@ RUN R -e "install.packages('pacman')"
 
 RUN chmod 777 /usr/local/lib/R/site-library
 
-COPY . /srv/shiny-server/sample-apps/shiny_portfolio
+RUN rm -r /srv/shiny-server/
+COPY . /srv/shiny-server/MeetMe
 
