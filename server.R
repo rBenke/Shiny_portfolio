@@ -1,4 +1,6 @@
-source("skills_graph.R")
+source("srv_R_files/skills_graph.R")
+source("srv_R_files/linkedin_cv.R")
+
 # Define server logic required to draw a histogram
 server <- function(input, output) {
   
@@ -9,9 +11,11 @@ server <- function(input, output) {
                  colourScale = JS("d3.scaleOrdinal(d3.schemeCategory10);"),
                  linkDistance = JS("function(d) { return Math.sqrt(d.value); }"),
                  fontSize = 30,linkWidth = JS("function(d) { return 2; }"),
-                  zoom = TRUE, opacityNoHover = 0.4, charge = -999, bounded = TRUE,
+                  zoom = TRUE, opacityNoHover = 0.4, charge = -999,
                 )
   })
+  
+  output$name <- renderPrint({ "Robert " })
   
 }
 
