@@ -1,4 +1,5 @@
 ui <- htmlTemplate("www/index.html",
-                   forceNet = forceNetworkOutput("force"),
-                   name = textOutput("name", inline = TRUE)
+                   name = textOutput("name", inline = TRUE),
+                   surname = textOutput("surname", inline = TRUE),
+                   force = forceNetworkOutput("force")
                    )

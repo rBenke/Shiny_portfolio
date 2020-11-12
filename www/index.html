@@ -161,10 +161,10 @@
             <div class="profile-wrapper wow fadeInRight" data-wow-delay="0.3s">
               <h3>Hi Guys!</h3>
               <p>I'm glad to see you here. I made this page to give you the access to all my projeckt and test some of the features by your self. I hope You will have fun exploring this page and all the deep learning models. Most of them are written in Python and working as a separate server. This shiny app is only connected with them through gRPC. In case of any question there is a e-mail form at the bottom of this page. Enjoy!  </p>
-              {{ name }}
+              
               <div class="about-profile">
                 <ul class="admin-profile">
-                  <li><span class="pro-title"> Name </span> <span class="pro-detail"> {{ name }} Benke</span></li>
+                  <li><span class="pro-title"> Name </span> <span class="pro-detail"> {{ name }} {{surname}} </span></li>
                   <li><span class="pro-title"> Age </span> <span class="pro-detail">25 Years</span></li>
                   <li><span class="pro-title"> Experience </span> <span class="pro-detail">1 Years</span></li>
                   <li><span class="pro-title"> Country </span> <span class="pro-detail">Poland</span></li>
@@ -183,13 +183,6 @@
     </section>
     <!-- About Section End -->
     
-    <section id="skills" class="section-padding">
-      <div class="container">
-        <div class="row">
-          {{ forceNet }}
-        </div>
-      </div>
-    </section>
     
     <!-- Services Section Start -->
     <section id="services" class="services section-padding">
